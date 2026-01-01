@@ -1,0 +1,21 @@
+Purpose:
+This document describes the recommended environment configuration required to run the Zero Trust–Enhanced Digital Twin Security project.
+System Requirements:
+•	Python version 3.9 or later
+•	Operating system: Windows, Linux, or macOS
+•	Minimum 8 GB RAM (16 GB recommended for large datasets)
+•	Optional GPU support for deep learning experiments
+Python Libraries:
+The project relies on standard data science and machine learning libraries such as:
+•	Numerical and data processing libraries
+•	Machine learning and deep learning frameworks
+•	Visualization and explainability tools
+All required libraries are listed in the requirements.txt file.
+Execution Environment Notes:
+•	The project can be executed locally or on cloud platforms such as Google Colab.
+•	For cloud execution, dataset paths may need adjustment.
+•	GPU acceleration is optional but recommended for faster training.
+Reproducibility Guidelines:
+•	Use fixed random seeds where possible
+•	Maintain consistent dataset versions
+•	Document any configuration changes during experiments

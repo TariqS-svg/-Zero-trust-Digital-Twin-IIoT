@@ -1,0 +1,5 @@
+This file lists all Python dependencies required to run the project, including:
+•	Data processing libraries
+•	Machine learning and deep learning frameworks
+•	Visualization and explainability tools
+The exact versions can be specified if strict reproducibility is required

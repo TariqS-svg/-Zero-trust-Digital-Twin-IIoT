@@ -1,0 +1,54 @@
+Purpose:
+This document describes the datasets associated with the Zero Trust–Enhanced Digital Twin Security for Industrial IoT project, including their role in the experimental workflow and expected structure.
+________________________________________
+1. Datasets Overview
+The framework is designed to work with publicly available intrusion detection datasets commonly used in IIoT and cybersecurity research, such as:
+•	NSL-KDD
+•	CICIDS-2017
+•	IoT-23
+•	TON_IoT
+These datasets contain network traffic and system activity records labeled as normal or malicious behavior.
+________________________________________
+2. Data Usage in the Project
+The datasets are used to:
+•	Train intrusion detection models
+•	Simulate federated learning clients
+•	Evaluate detection accuracy under normal conditions
+•	Assess robustness under adversarial and insider attack scenarios
+________________________________________
+3. Expected Data Structure
+Each dataset is expected to include:
+•	Multiple feature columns representing network or system behavior
+•	One target column indicating the class or attack type
+Typical classes include:
+•	Normal
+•	Denial of Service (DoS)
+•	Probe
+•	Remote to Local (R2L)
+•	User to Root (U2R)
+________________________________________
+4. Preprocessing Assumptions
+Before training, datasets typically undergo:
+•	Data cleaning and normalization
+•	Feature scaling
+•	Optional class balancing techniques
+•	Optional noise injection for privacy preservation
+These steps support realistic simulation of federated and privacy-aware learning.
+________________________________________
+5. Federated Learning Simulation
+For federated learning experiments:
+•	Data is split across multiple simulated clients
+•	Each client trains a local model
+•	Model updates are aggregated centrally without sharing raw data
+This approach aligns with Zero Trust and privacy-by-design principles.
+________________________________________
+6. Experimental Outputs
+The project may generate:
+•	Performance metrics such as accuracy and latency
+•	Confusion matrices and ROC curves
+•	Trust score logs for each device
+•	Digital Twin visual representations showing device states (e.g., trusted, suspicious, quarantined)
+________________________________________
+7. Data Availability Note
+Datasets are not included in the GitHub repository due to size and licensing constraints.
+Users must download datasets from their original sources and place them in the appropriate local directory
